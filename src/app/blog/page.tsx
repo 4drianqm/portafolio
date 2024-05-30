@@ -126,7 +126,7 @@ export default function BlogPage() {
                 transparencia, la inspección y la adaptación para gestionar
                 proyectos de manera eficiente. Se caracteriza por su enfoque
                 iterativo e incremental, dividido en ciclos de trabajo llamados
-                "sprints". Durante un sprint, el equipo trabaja en un conjunto
+                sprints. Durante un sprint, el equipo trabaja en un conjunto
                 específico de tareas definidas al principio del sprint y se
                 compromete a completarlas dentro de un plazo fijo, generalmente
                 de una a cuatro semanas. En Scrum, el equipo de trabajo se
