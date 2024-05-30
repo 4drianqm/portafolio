@@ -1,8 +1,10 @@
-"use client";
+"use client"
+
 
 import NavLink from "@/components/NavLink";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
@@ -10,42 +12,48 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Proyects",
+    title: "Proyectos",
     path: "#proyects",
   },
   {
-    title: "Experience",
+    title: "Experiencia",
     path: "#experience",
   },
+  {
+    title: 'Blog',
+    path: '/blog'
+  }
 ];
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-">
-      <div className="flex flex-wrap items-center justify-center mx-auto p-8">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-gray-900 bg-opacity-100">
+      <div className="flex justify-between items-center mx-auto p-4">
         <div className="mobile-menu block md:hidden">
-          {navbarOpen ? (
-            <button onClick={()=> setNavbarOpen(false)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-300 hover:text-white hover:border-white">
+          <button
+            onClick={() => setNavbarOpen(!navbarOpen)}
+            className="flex items-center px-3 py-2 border rounded border-gray-300 text-gray-300 hover:text-white hover:border-white"
+          >
+            {navbarOpen ? (
+              <XMarkIcon className="h-5 w-5" />
+            ) : (
               <Bars3Icon className="h-5 w-5" />
-            </button>
-          ) : (
-            <button onClick={()=> setNavbarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-300 hover:text-white hover:border-white">
-            <XMarkIcon className="h-5 w-5" />
+            )}
           </button>
-          )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row sm:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
+        <div className={`menu ${navbarOpen ? 'block' : 'hidden'} md:block md:w-auto`}>
+          <ul className="flex flex-col md:flex-row md:space-x-8 md:space-y-0 sm:space-x-0 sm:space-y-2">
+            {/* {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink title={link.title} href={link.path} />
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
       </div>
+      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
   );
 }
