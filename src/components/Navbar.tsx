@@ -45,11 +45,11 @@ export default function Navbar() {
         </div>
         <div className={`menu ${navbarOpen ? 'block' : 'hidden'} md:block md:w-auto`}>
           <ul className="flex flex-col md:flex-row md:space-x-8 md:space-y-0 sm:space-x-0 sm:space-y-2">
-            {/* {navLinks.map((link, index) => (
+            {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink title={link.title} href={link.path} />
               </li>
-            ))} */}
+            ))}
           </ul>
         </div>
       </div>

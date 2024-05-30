@@ -31,23 +31,23 @@ export default function AboutMe() {
             to turning ideas into impactful realities.
           </p>
           <div className="flex flex-wrap justify-center mt-8">
-            <FaLaravel className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <FaDatabase className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <FaReact className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <FaCss3 className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <SiMysql className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <FaDocker className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <FaJava className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <RiNextjsFill className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
-            <IoLogoJavascript className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4" />
+            <FaLaravel className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <FaDatabase className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <FaReact className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <FaCss3 className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <SiMysql className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <FaDocker className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <FaJava className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <RiNextjsFill className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
+            <IoLogoJavascript className="text-white text-4xl sm:text-5xl lg:text-6xl mx-4 my-2" />
           </div>
           <div className="flex justify-center mt-8">
             <Image
               src="/aboutme.jpeg"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               alt="Descripción de la imagen"
-              className="rounded-full"
+              className="rounded-full sm:h-200 sm:w-200"
             />
           </div>
         </div>

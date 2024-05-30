@@ -44,8 +44,8 @@ export default function Experience() {
                   <div className="flex justify-center mt-5">
                     <Image
                       src={"/cari.png"}
-                      width={300}
-                      height={300}
+                      width={200}
+                      height={200}
                       alt="cari"
                       className="rounded-full"
                     />
