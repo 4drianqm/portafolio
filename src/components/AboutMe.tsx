@@ -26,8 +26,8 @@ export default function AboutMe() {
             Driven by my passion for innovation and fueled by the thrill of
             problem-solving, I thrive as a full-stack developer. Constantly
             seeking to expand my horizons and embrace new challenges, I immerse
-            myself in the ever-evolving world of technology. With an insatiable
-            curiosity and a knack for finding ingenious solutions, I'm dedicated
+            myself in the ever evolving world of technology. With an insatiable
+            curiosity and a knack for finding ingenious solutions, Im dedicated
             to turning ideas into impactful realities.
           </p>
           <div className="flex flex-wrap justify-center mt-8">

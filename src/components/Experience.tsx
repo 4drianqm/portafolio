@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Experience() {
   return (
@@ -12,7 +12,13 @@ export default function Experience() {
             My Experience
           </span>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4">
-          During my tenure at Cari Latinoamérica as a software developer, I've been immersed in exciting and challenging projects that have expanded my knowledge and expertise in the software development realm. Working alongside a diverse and multicultural team, I've contributed to the creation of innovative solutions tailored to the Latin American market. From designing and implementing new features to optimizing existing processes
+            During my tenure at Cari Latinoamérica as a software developer, Ive
+            been immersed in exciting and challenging projects that have
+            expanded my knowledge and expertise in the software development
+            realm. Working alongside a diverse and multicultural team, Ive
+            contributed to the creation of innovative solutions tailored to the
+            Latin American market. From designing and implementing new features
+            to optimizing existing processes
           </p>
           <div className="flex justify-center mt-8">
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -33,16 +39,14 @@ export default function Experience() {
                 </div>
                 <div className="timeline-start md:text-end mb-10 text-white text-end">
                   <time className="font-mono italic">2024</time>
-                  <div className="text-lg font-black">
-                    Cari Latinoamerica
-                  </div>
+                  <div className="text-lg font-black">Cari Latinoamerica</div>
                   <p className="text-gray-300">Software developer</p>
                   <div className="flex justify-center mt-5">
                     <Image
-                      src={'/cari.png'}
+                      src={"/cari.png"}
                       width={300}
                       height={300}
-                      alt='cari'
+                      alt="cari"
                       className="rounded-full"
                     />
                   </div>
